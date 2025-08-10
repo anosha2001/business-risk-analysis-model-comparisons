@@ -1,0 +1,47 @@
+{
+  "baseline_lr_params": {
+    "C": 1.0,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": null,
+    "max_iter": 1000,
+    "multi_class": "multinomial",
+    "n_jobs": null,
+    "penalty": "l2",
+    "random_state": 42,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "optimized_lr_params": {
+    "C": 0.0008629132190071859,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": 0.05808361216819946,
+    "max_iter": 3000,
+    "multi_class": "multinomial",
+    "n_jobs": null,
+    "penalty": "l1",
+    "random_state": 42,
+    "solver": "saga",
+    "tol": 2.6828750938254374e-05,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "best_model_name": "Baseline Logistic Regression",
+  "removed_features": [
+    "disruption_likelihood_score"
+  ],
+  "random_state": 42,
+  "hyperparameter_search": {
+    "method": "RandomizedSearchCV",
+    "n_iter": 30,
+    "cv_folds": 3,
+    "scoring": "f1_weighted"
+  }
+}
