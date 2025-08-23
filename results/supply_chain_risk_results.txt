@@ -1,0 +1,82 @@
+===== Classification Results (manual_risk_label) =====
+
+decision_tree_classifier
+Accuracy: 1.0000
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       407
+           1       1.00      1.00      1.00       187
+           2       1.00      1.00      1.00         6
+
+    accuracy                           1.00       600
+   macro avg       1.00      1.00      1.00       600
+weighted avg       1.00      1.00      1.00       600
+
+------------------------------------------------------------
+
+Top 10 Features:
+weather_condition: 1.0000
+location: 0.0000
+temperature: 0.0000
+vibration_level: 0.0000
+humidity: 0.0000
+inventory_status: 0.0000
+stock_quantity: 0.0000
+supplier_rating: 0.0000
+logistics_partner: 0.0000
+
+------------------------------------------------------------
+
+random_forest_classifier
+Accuracy: 0.9983
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       407
+           1       0.99      1.00      1.00       187
+           2       1.00      0.83      0.91         6
+
+    accuracy                           1.00       600
+   macro avg       1.00      0.94      0.97       600
+weighted avg       1.00      1.00      1.00       600
+
+------------------------------------------------------------
+
+Top 10 Features:
+weather_condition: 0.6108
+vibration_level: 0.0770
+stock_quantity: 0.0717
+supplier_rating: 0.0695
+humidity: 0.0652
+temperature: 0.0545
+inventory_status: 0.0384
+logistics_partner: 0.0077
+location: 0.0052
+
+------------------------------------------------------------
+
+logistic_regression_classifier
+Accuracy: 0.9983
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       407
+           1       1.00      1.00      1.00       187
+           2       0.86      1.00      0.92         6
+
+    accuracy                           1.00       600
+   macro avg       0.95      1.00      0.97       600
+weighted avg       1.00      1.00      1.00       600
+
+------------------------------------------------------------
+
+Top 10 Features:
+weather_condition: 5.0566
+supplier_rating: 0.4654
+vibration_level: 0.3695
+temperature: 0.2354
+inventory_status: 0.2172
+stock_quantity: 0.1987
+logistics_partner: 0.1698
+humidity: 0.0784
+location: 0.0681
+
+------------------------------------------------------------
