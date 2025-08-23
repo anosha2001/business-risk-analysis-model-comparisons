@@ -1,0 +1,51 @@
+===== Regression Results (risk_probability) =====
+
+decision_tree_regressor
+MSE: 0.0015
+R²: 0.9780
+
+------------------------------------------------------------
+
+Top 15 Features (by importance):
+port_delay_days: 0.9656
+weather_disruption_score: 0.0224
+supplier_reliability_index: 0.0071
+fuel_price_index: 0.0008
+supplier_lead_time_days: 0.0006
+supplier_quality_score: 0.0006
+machine_runtime_hours: 0.0006
+inventory_level_units: 0.0006
+pending_orders: 0.0005
+temperature_C: 0.0005
+market_demand_index: 0.0004
+vibration_level: 0.0004
+
+------------------------------------------------------------
+
+random_forest_regressor
+MSE: 0.0009
+R²: 0.9873
+
+------------------------------------------------------------
+
+Top 15 Features (by importance):
+port_delay_days: 0.9660
+weather_disruption_score: 0.0220
+supplier_reliability_index: 0.0062
+inventory_level_units: 0.0007
+fuel_price_index: 0.0007
+supplier_quality_score: 0.0007
+vibration_level: 0.0006
+market_demand_index: 0.0006
+pending_orders: 0.0006
+machine_runtime_hours: 0.0006
+temperature_C: 0.0006
+supplier_lead_time_days: 0.0006
+
+------------------------------------------------------------
+
+linear_regression_regressor
+MSE: 0.0127
+R²: 0.8186
+
+------------------------------------------------------------

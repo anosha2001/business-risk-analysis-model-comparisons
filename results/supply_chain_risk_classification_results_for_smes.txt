@@ -1,0 +1,75 @@
+===== Classification Results (risk_label) =====
+
+decision_tree_classifier
+Accuracy: 0.8831
+              precision    recall  f1-score   support
+
+           0       0.95      0.96      0.96       310
+           1       0.87      0.78      0.82        91
+           2       0.69      0.72      0.70        95
+
+    accuracy                           0.88       496
+   macro avg       0.83      0.82      0.83       496
+weighted avg       0.88      0.88      0.88       496
+
+------------------------------------------------------------
+
+Top 15 Features (by importance):
+port_delay_days: 0.8100
+weather_disruption_score: 0.0763
+supplier_reliability_index: 0.0238
+market_demand_index: 0.0177
+machine_runtime_hours: 0.0152
+temperature_C: 0.0135
+fuel_price_index: 0.0120
+pending_orders: 0.0100
+inventory_level_units: 0.0092
+vibration_level: 0.0063
+supplier_quality_score: 0.0039
+supplier_lead_time_days: 0.0022
+
+------------------------------------------------------------
+
+random_forest_classifier
+Accuracy: 0.9052
+              precision    recall  f1-score   support
+
+           0       0.96      0.96      0.96       310
+           1       0.92      0.84      0.87        91
+           2       0.74      0.78      0.76        95
+
+    accuracy                           0.91       496
+   macro avg       0.87      0.86      0.86       496
+weighted avg       0.91      0.91      0.91       496
+
+------------------------------------------------------------
+
+Top 15 Features (by importance):
+port_delay_days: 0.7037
+weather_disruption_score: 0.0514
+supplier_reliability_index: 0.0290
+inventory_level_units: 0.0265
+market_demand_index: 0.0255
+vibration_level: 0.0248
+temperature_C: 0.0241
+supplier_lead_time_days: 0.0237
+machine_runtime_hours: 0.0234
+fuel_price_index: 0.0232
+pending_orders: 0.0229
+supplier_quality_score: 0.0217
+
+------------------------------------------------------------
+
+logistic_regression_classifier
+Accuracy: 0.9274
+              precision    recall  f1-score   support
+
+           0       1.00      0.95      0.97       310
+           1       0.91      0.88      0.89        91
+           2       0.76      0.92      0.83        95
+
+    accuracy                           0.93       496
+   macro avg       0.89      0.91      0.90       496
+weighted avg       0.94      0.93      0.93       496
+
+------------------------------------------------------------
