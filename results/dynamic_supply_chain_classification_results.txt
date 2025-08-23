@@ -1,0 +1,43 @@
+===== Classification Results (risk_classification) =====
+
+decision_tree_classifier
+Accuracy: 0.5796
+               precision    recall  f1-score   support
+
+    High Risk       0.74      0.73      0.73      4764
+     Low Risk       0.10      0.10      0.10       641
+Moderate Risk       0.16      0.16      0.16      1008
+
+     accuracy                           0.58      6413
+    macro avg       0.33      0.33      0.33      6413
+ weighted avg       0.58      0.58      0.58      6413
+
+------------------------------------------------------------
+
+random_forest_classifier
+Accuracy: 0.7429
+               precision    recall  f1-score   support
+
+    High Risk       0.74      1.00      0.85      4764
+     Low Risk       0.00      0.00      0.00       641
+Moderate Risk       0.00      0.00      0.00      1008
+
+     accuracy                           0.74      6413
+    macro avg       0.25      0.33      0.28      6413
+ weighted avg       0.55      0.74      0.63      6413
+
+------------------------------------------------------------
+
+logistic_regression_classifier
+Accuracy: 0.2893
+               precision    recall  f1-score   support
+
+    High Risk       0.72      0.27      0.39      4764
+     Low Risk       0.10      0.39      0.16       641
+Moderate Risk       0.15      0.31      0.20      1008
+
+     accuracy                           0.29      6413
+    macro avg       0.32      0.32      0.25      6413
+ weighted avg       0.57      0.29      0.34      6413
+
+------------------------------------------------------------
