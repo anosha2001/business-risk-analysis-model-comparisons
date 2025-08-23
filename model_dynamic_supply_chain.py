@@ -67,12 +67,27 @@ with open(cls_results_path, "w") as f:
         report = classification_report(y_test_cls, preds, target_names=le_y.classes_)
 
         # Save model
-        joblib.dump(model, f"models/dynamic_supply_chain_classification{name}.pkl")
+        joblib.dump(model, f"models/dynamic_supply_chain_classification_{name}.pkl")
 
         # Write results
         f.write(f"\n{name}\n")
         f.write(f"Accuracy: {acc:.4f}\n")
         f.write(report)
+
+        # Feature importance / coefficients
+        if hasattr(model, "feature_importances_"):
+            importances = model.feature_importances_
+        elif hasattr(model, "coef_"):
+            importances = np.abs(model.coef_).flatten()
+        else:
+            importances = None
+
+        if importances is not None:
+            feature_importance = sorted(zip(X_cls.columns, importances), key=lambda x: x[1], reverse=True)[:15]
+            f.write("\nTop 15 Features:\n")
+            for feat, score in feature_importance:
+                f.write(f"{feat}: {score:.4f}\n")
+
         f.write("\n" + "-" * 60 + "\n")
 
 
@@ -114,9 +129,24 @@ with open(reg_results_path, "w") as f:
         r2 = r2_score(y_test_reg, preds)
 
         # Save model
-        joblib.dump(model, f"models/dynamic_supply_chain_regression{name}.pkl")
+        joblib.dump(model, f"models/dynamic_supply_chain_regression_{name}.pkl")
 
         # Write results
         f.write(f"\n{name}\n")
         f.write(f"MSE: {mse:.4f}, R2: {r2:.4f}\n")
+
+        # Feature importance / coefficients
+        if hasattr(model, "feature_importances_"):
+            importances = model.feature_importances_
+        elif hasattr(model, "coef_"):
+            importances = np.abs(model.coef_).flatten()
+        else:
+            importances = None
+
+        if importances is not None:
+            feature_importance = sorted(zip(X_reg.columns, importances), key=lambda x: x[1], reverse=True)[:15]
+            f.write("\nTop 15 Features:\n")
+            for feat, score in feature_importance:
+                f.write(f"{feat}: {score:.4f}\n")
+
         f.write("-" * 60 + "\n")

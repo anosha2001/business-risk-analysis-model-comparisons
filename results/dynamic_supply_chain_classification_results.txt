@@ -12,6 +12,23 @@ Moderate Risk       0.16      0.16      0.16      1008
     macro avg       0.33      0.33      0.33      6413
  weighted avg       0.58      0.58      0.58      6413
 
+Top 15 Features:
+order_fulfillment_status: 0.0495
+cargo_condition_status: 0.0482
+warehouse_inventory_level: 0.0479
+delay_probability: 0.0477
+delivery_time_deviation: 0.0477
+port_congestion_level: 0.0475
+supplier_reliability_score: 0.0469
+iot_temperature: 0.0461
+traffic_congestion_level: 0.0461
+eta_variation_hours: 0.0454
+lead_time_days: 0.0437
+driver_behavior_score: 0.0423
+fuel_consumption_rate: 0.0415
+historical_demand: 0.0411
+shipping_costs: 0.0409
+
 ------------------------------------------------------------
 
 random_forest_classifier
@@ -26,6 +43,23 @@ Moderate Risk       0.00      0.00      0.00      1008
     macro avg       0.25      0.33      0.28      6413
  weighted avg       0.55      0.74      0.63      6413
 
+Top 15 Features:
+fatigue_monitoring_score: 0.0443
+traffic_congestion_level: 0.0441
+cargo_condition_status: 0.0441
+shipping_costs: 0.0441
+eta_variation_hours: 0.0440
+weather_condition_severity: 0.0440
+order_fulfillment_status: 0.0440
+driver_behavior_score: 0.0439
+vehicle_gps_latitude: 0.0437
+delay_probability: 0.0437
+handling_equipment_availability: 0.0436
+loading_unloading_time: 0.0435
+warehouse_inventory_level: 0.0433
+lead_time_days: 0.0433
+customs_clearance_time: 0.0433
+
 ------------------------------------------------------------
 
 logistic_regression_classifier
@@ -39,5 +73,22 @@ Moderate Risk       0.15      0.31      0.20      1008
      accuracy                           0.29      6413
     macro avg       0.32      0.32      0.25      6413
  weighted avg       0.57      0.29      0.34      6413
+
+Top 15 Features:
+weather_condition_severity: 0.0214
+iot_temperature: 0.0156
+order_fulfillment_status: 0.0145
+cargo_condition_status: 0.0130
+fatigue_monitoring_score: 0.0125
+route_risk_level: 0.0107
+warehouse_inventory_level: 0.0105
+port_congestion_level: 0.0104
+supplier_reliability_score: 0.0075
+driver_behavior_score: 0.0074
+loading_unloading_time: 0.0070
+delay_probability: 0.0064
+lead_time_days: 0.0063
+delivery_time_deviation: 0.0058
+vehicle_gps_longitude: 0.0055
 
 ------------------------------------------------------------

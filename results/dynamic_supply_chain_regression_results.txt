@@ -2,12 +2,63 @@
 
 decision_tree_regressor
 MSE: 0.1644, R2: -1.0593
+
+Top 15 Features:
+route_risk_level: 0.0473
+handling_equipment_availability: 0.0469
+vehicle_gps_latitude: 0.0467
+customs_clearance_time: 0.0464
+shipping_costs: 0.0461
+vehicle_gps_longitude: 0.0457
+eta_variation_hours: 0.0456
+order_fulfillment_status: 0.0454
+loading_unloading_time: 0.0449
+fatigue_monitoring_score: 0.0448
+cargo_condition_status: 0.0447
+delay_probability: 0.0436
+iot_temperature: 0.0433
+weather_condition_severity: 0.0433
+port_congestion_level: 0.0431
 ------------------------------------------------------------
 
 random_forest_regressor
 MSE: 0.0830, R2: -0.0397
+
+Top 15 Features:
+shipping_costs: 0.0453
+fatigue_monitoring_score: 0.0450
+eta_variation_hours: 0.0449
+weather_condition_severity: 0.0446
+vehicle_gps_latitude: 0.0443
+vehicle_gps_longitude: 0.0442
+delay_probability: 0.0441
+handling_equipment_availability: 0.0439
+lead_time_days: 0.0437
+route_risk_level: 0.0437
+customs_clearance_time: 0.0435
+port_congestion_level: 0.0434
+driver_behavior_score: 0.0434
+delivery_time_deviation: 0.0433
+warehouse_inventory_level: 0.0433
 ------------------------------------------------------------
 
 linear_regression_regressor
 MSE: 0.0800, R2: -0.0024
+
+Top 15 Features:
+warehouse_inventory_level: 0.0031
+weather_condition_severity: 0.0030
+fatigue_monitoring_score: 0.0027
+order_fulfillment_status: 0.0024
+delay_probability: 0.0023
+port_congestion_level: 0.0021
+route_risk_level: 0.0020
+cargo_condition_status: 0.0019
+iot_temperature: 0.0019
+vehicle_gps_latitude: 0.0019
+driver_behavior_score: 0.0017
+loading_unloading_time: 0.0017
+eta_variation_hours: 0.0014
+customs_clearance_time: 0.0011
+traffic_congestion_level: 0.0011
 ------------------------------------------------------------
