@@ -104,7 +104,7 @@ regressors = {
 
 reg_results_path = "results/dynamic_supply_chain_regression_results.txt"
 with open(reg_results_path, "w") as f:
-    f.write("===== Regression Results (delivery_time_deviation) =====\n")
+    f.write("===== Regression Results (disruption_likelihood_score) =====\n")
 
     for name, model in regressors.items():
         model.fit(X_train_reg, y_train_reg)
