@@ -1,0 +1,25 @@
+===== EDA =====
+Shape: (3000, 10)
+
+Label distribution:
+manual_risk_label
+0    2028
+1     941
+2      31
+Name: count, dtype: int64
+
+Descriptive Statistics:
+           location  temperature  ...  weather_condition  manual_risk_label
+count          3000  3000.000000  ...               3000        3000.000000
+unique            3          NaN  ...                  3                NaN
+top     Warehouse_A          NaN  ...              sunny                NaN
+freq           1031          NaN  ...               2028                NaN
+mean            NaN    24.895820  ...                NaN           0.334333
+std             NaN     5.188619  ...                NaN           0.493257
+min             NaN     7.600000  ...                NaN           0.000000
+25%             NaN    21.407500  ...                NaN           0.000000
+50%             NaN    24.950000  ...                NaN           0.000000
+75%             NaN    28.440000  ...                NaN           1.000000
+max             NaN    42.090000  ...                NaN           2.000000
+
+[11 rows x 10 columns]
