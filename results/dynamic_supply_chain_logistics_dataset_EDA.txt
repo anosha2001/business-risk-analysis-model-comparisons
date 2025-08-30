@@ -1,0 +1,40 @@
+===== EDA Report for dynamic_supply_chain_logistics_dataset =====
+
+Shape: (32065, 25)
+
+Data Types:
+vehicle_gps_latitude               float64
+vehicle_gps_longitude              float64
+fuel_consumption_rate              float64
+eta_variation_hours                float64
+traffic_congestion_level           float64
+warehouse_inventory_level          float64
+loading_unloading_time             float64
+handling_equipment_availability    float64
+order_fulfillment_status           float64
+weather_condition_severity         float64
+port_congestion_level              float64
+shipping_costs                     float64
+supplier_reliability_score         float64
+lead_time_days                     float64
+historical_demand                  float64
+iot_temperature                    float64
+cargo_condition_status             float64
+route_risk_level                   float64
+customs_clearance_time             float64
+driver_behavior_score              float64
+fatigue_monitoring_score           float64
+disruption_likelihood_score        float64
+delay_probability                  float64
+risk_classification                 object
+delivery_time_deviation            float64
+dtype: object
+
+Descriptive Statistics:
+Risk Classification Distribution:
+risk_classification
+High Risk        23944
+Moderate Risk     5011
+Low Risk          3110
+Name: count, dtype: int64
+

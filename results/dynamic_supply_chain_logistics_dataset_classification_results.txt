@@ -1,0 +1,66 @@
+===== Classification Results (dynamic_supply_chain_logistics_dataset) =====
+
+decision_tree_classifier
+Accuracy: 0.5796
+               precision    recall  f1-score   support
+
+    High Risk       0.74      0.73      0.73      4764
+     Low Risk       0.10      0.10      0.10       641
+Moderate Risk       0.16      0.16      0.16      1008
+
+     accuracy                           0.58      6413
+    macro avg       0.33      0.33      0.33      6413
+ weighted avg       0.58      0.58      0.58      6413
+
+Top 15 Features:
+order_fulfillment_status: 0.0495
+cargo_condition_status: 0.0482
+warehouse_inventory_level: 0.0479
+delay_probability: 0.0477
+delivery_time_deviation: 0.0477
+port_congestion_level: 0.0475
+supplier_reliability_score: 0.0469
+iot_temperature: 0.0461
+traffic_congestion_level: 0.0461
+eta_variation_hours: 0.0454
+lead_time_days: 0.0437
+driver_behavior_score: 0.0423
+fuel_consumption_rate: 0.0415
+historical_demand: 0.0411
+shipping_costs: 0.0409
+
+------------------------------------------------------------
+5-Fold CV Accuracy: 0.5815 ± 0.0058
+
+============================================================
+
+random_forest_classifier
+Accuracy: 0.7429
+               precision    recall  f1-score   support
+
+    High Risk       0.74      1.00      0.85      4764
+     Low Risk       0.00      0.00      0.00       641
+Moderate Risk       0.00      0.00      0.00      1008
+
+     accuracy                           0.74      6413
+    macro avg       0.25      0.33      0.28      6413
+ weighted avg       0.55      0.74      0.63      6413
+
+Top 15 Features:
+fatigue_monitoring_score: 0.0443
+traffic_congestion_level: 0.0441
+cargo_condition_status: 0.0441
+shipping_costs: 0.0441
+eta_variation_hours: 0.0440
+weather_condition_severity: 0.0440
+order_fulfillment_status: 0.0440
+driver_behavior_score: 0.0439
+vehicle_gps_latitude: 0.0437
+delay_probability: 0.0437
+handling_equipment_availability: 0.0436
+loading_unloading_time: 0.0435
+warehouse_inventory_level: 0.0433
+lead_time_days: 0.0433
+customs_clearance_time: 0.0433
+
+------------------------------------------------------------
