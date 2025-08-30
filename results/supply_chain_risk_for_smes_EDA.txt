@@ -1,0 +1,22 @@
+===== EDA Report for supply_chain_risk_for_smes =====
+
+Shape: (2478, 14)
+
+Data Types:
+temperature_C                 float64
+vibration_level               float64
+machine_runtime_hours         float64
+inventory_level_units           int64
+pending_orders                  int64
+supplier_lead_time_days       float64
+supplier_quality_score        float64
+supplier_reliability_index    float64
+fuel_price_index              float64
+port_delay_days               float64
+market_demand_index           float64
+weather_disruption_score      float64
+risk_probability              float64
+risk_label                     object
+dtype: object
+
+Descriptive Statistics:

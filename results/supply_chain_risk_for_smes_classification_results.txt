@@ -1,4 +1,4 @@
-===== Classification Results (risk_label) =====
+===== Classification Results (supply_chain_risk_for_smes) =====
 
 decision_tree_classifier
 Accuracy: 0.8831
@@ -12,9 +12,7 @@ Accuracy: 0.8831
    macro avg       0.83      0.82      0.83       496
 weighted avg       0.88      0.88      0.88       496
 
-------------------------------------------------------------
-
-Top 15 Features:
+Top 15 Features (by importance):
 port_delay_days: 0.8100
 weather_disruption_score: 0.0763
 supplier_reliability_index: 0.0238
@@ -29,6 +27,9 @@ supplier_quality_score: 0.0039
 supplier_lead_time_days: 0.0022
 
 ------------------------------------------------------------
+5-Fold CV Accuracy: 0.9270 ± 0.0114
+
+============================================================
 
 random_forest_classifier
 Accuracy: 0.9052
@@ -42,9 +43,7 @@ Accuracy: 0.9052
    macro avg       0.87      0.86      0.86       496
 weighted avg       0.91      0.91      0.91       496
 
-------------------------------------------------------------
-
-Top 15 Features:
+Top 15 Features (by importance):
 port_delay_days: 0.7037
 weather_disruption_score: 0.0514
 supplier_reliability_index: 0.0290
@@ -59,6 +58,9 @@ pending_orders: 0.0229
 supplier_quality_score: 0.0217
 
 ------------------------------------------------------------
+5-Fold CV Accuracy: 0.9407 ± 0.0055
+
+============================================================
 
 logistic_regression_classifier
 Accuracy: 0.9274
@@ -71,21 +73,6 @@ Accuracy: 0.9274
     accuracy                           0.93       496
    macro avg       0.89      0.91      0.90       496
 weighted avg       0.94      0.93      0.93       496
+5-Fold CV Accuracy: 0.9253 ± 0.0036
 
-------------------------------------------------------------
-
-Top 15 Features:
-port_delay_days: 7.0386
-weather_disruption_score: 0.9547
-supplier_reliability_index: 0.5193
-machine_runtime_hours: 0.1067
-supplier_lead_time_days: 0.0628
-market_demand_index: 0.0591
-vibration_level: 0.0473
-supplier_quality_score: 0.0459
-temperature_C: 0.0451
-inventory_level_units: 0.0446
-fuel_price_index: 0.0361
-pending_orders: 0.0134
-
-------------------------------------------------------------
+============================================================

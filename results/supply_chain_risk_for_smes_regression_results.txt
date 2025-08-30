@@ -1,4 +1,4 @@
-===== Regression Results (risk_probability) =====
+===== Regression Results (supply_chain_risk_for_smes) =====
 
 decision_tree_regressor
 MSE: 0.0015
@@ -6,7 +6,7 @@ R²: 0.9780
 
 ------------------------------------------------------------
 
-Top 15 Features:
+Top 15 Features (by importance):
 port_delay_days: 0.9656
 weather_disruption_score: 0.0224
 supplier_reliability_index: 0.0071
@@ -28,7 +28,7 @@ R²: 0.9873
 
 ------------------------------------------------------------
 
-Top 15 Features:
+Top 15 Features (by importance):
 port_delay_days: 0.9660
 weather_disruption_score: 0.0220
 supplier_reliability_index: 0.0062
@@ -47,21 +47,5 @@ supplier_lead_time_days: 0.0006
 linear_regression_regressor
 MSE: 0.0127
 R²: 0.8186
-
-------------------------------------------------------------
-
-Top 15 Features:
-port_delay_days: 0.2385
-weather_disruption_score: 0.0300
-supplier_reliability_index: 0.0144
-inventory_level_units: 0.0076
-fuel_price_index: 0.0059
-machine_runtime_hours: 0.0043
-temperature_C: 0.0036
-supplier_quality_score: 0.0031
-supplier_lead_time_days: 0.0023
-pending_orders: 0.0020
-market_demand_index: 0.0009
-vibration_level: 0.0005
 
 ------------------------------------------------------------
